@@ -3,7 +3,7 @@
   <PropertyGroup>
         <TargetFrameworks>netstandard2.0;netstandard2.1</TargetFrameworks>
     <PackOnBuild>true</PackOnBuild>
-    <PackageVersion>0.1.1</PackageVersion>
+    <PackageVersion>0.2.0</PackageVersion>
     <Authors>Robin Nunkesser</Authors>
     <PackageLicenseUrl>https://github.com/Italbytz/nuget-adapters-meal-stwpb/blob/main/LICENSE</PackageLicenseUrl>
     <Owners>Robin Nunkesser</Owners>
@@ -23,7 +23,7 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Italbytz.Ports.Common" Version="0.2.1" />
-    <PackageReference Include="Italbytz.Ports.Meal" Version="0.2.1" />
+    <PackageReference Include="Italbytz.Ports.Meal" Version="0.3.0" />
     <PackageReference Include="Italbytz.Infrastructure.STWPB" Version="0.1.1" />
   </ItemGroup>
 

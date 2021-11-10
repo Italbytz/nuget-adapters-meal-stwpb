@@ -5,6 +5,8 @@ VisualStudioVersion = 25.0.1700.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Italbytz.Adapters.Meal.STWPB", "Italbytz.Adapters.Meal.STWPB\Italbytz.Adapters.Meal.STWPB.csproj", "{EAC8EDA7-8B30-4C6E-8F4C-3FF0555D9448}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Italbytz.Adapters.Meal.STWPB.Tests", "Italbytz.Adapters.Meal.STWPB.Tests\Italbytz.Adapters.Meal.STWPB.Tests.csproj", "{90FC4EE9-8DB9-46EC-BF58-FFD8793ED3DA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{EAC8EDA7-8B30-4C6E-8F4C-3FF0555D9448}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EAC8EDA7-8B30-4C6E-8F4C-3FF0555D9448}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EAC8EDA7-8B30-4C6E-8F4C-3FF0555D9448}.Release|Any CPU.Build.0 = Release|Any CPU
+		{90FC4EE9-8DB9-46EC-BF58-FFD8793ED3DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{90FC4EE9-8DB9-46EC-BF58-FFD8793ED3DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{90FC4EE9-8DB9-46EC-BF58-FFD8793ED3DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{90FC4EE9-8DB9-46EC-BF58-FFD8793ED3DA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
