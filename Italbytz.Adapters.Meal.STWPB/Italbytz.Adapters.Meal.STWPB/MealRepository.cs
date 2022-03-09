@@ -19,24 +19,16 @@ namespace Italbytz.Adapters.Meal.STWPB
             _language = language;
         }
 
-        public Task<Result<IMeal>> Retrieve(int id)
+        public Task<IMeal> Retrieve(int id)
         {
             throw new NotImplementedException();
         }
 
-        public async Task<Result<List<IMeal>>> RetrieveAll()
+        public async Task<List<IMeal>> RetrieveAll()
         {
-            try
-            {
-                var api = new MensaAPI(_id, _language);
-                var meals = await api.GetTodaysHammMeals();                
-                return new Result<List<IMeal>>(meals.Select((meal) => (IMeal)meal.ToMeal()).ToList());
-            }
-            catch (System.Exception ex)
-            {
-                return new Result<List<IMeal>>(ex);
-            }
-
+            var api = new MensaAPI(_id, _language);
+            var meals = await api.GetTodaysHammMeals();
+            return meals.Select((meal) => (IMeal)meal.ToMeal()).ToList();
         }
 
     }
