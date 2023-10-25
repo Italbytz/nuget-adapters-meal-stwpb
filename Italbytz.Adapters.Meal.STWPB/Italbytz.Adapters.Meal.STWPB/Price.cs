@@ -2,7 +2,7 @@
 
 namespace Italbytz.Adapters.Meal.STWPB
 {
-    internal class Price : IPrice
+    public class Price : IPrice
     {
         public Price()
         {
