@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Project Sdk="Microsoft.NET.Sdk">
 	<PropertyGroup>
-		<TargetFrameworks>netstandard2.0;netstandard2.1</TargetFrameworks>
+		<TargetFrameworks>netstandard2.0;netstandard2.1;net8.0;net9.0</TargetFrameworks>
 		<PackOnBuild>true</PackOnBuild>
-		<PackageVersion>0.4.0</PackageVersion>
+		<PackageVersion>9.0.0-rc.1</PackageVersion>
 		<Authors>Robin Nunkesser</Authors>
-		<PackageLicenseUrl>https://github.com/Italbytz/nuget-adapters-meal-stwpb/blob/main/LICENSE</PackageLicenseUrl>
+		<PackageLicenseExpression>MIT</PackageLicenseExpression>
+		<PackageReadmeFile>introduction.md</PackageReadmeFile>
 		<Owners>Robin Nunkesser</Owners>
 		<PackageProjectUrl>https://github.com/Italbytz/nuget-adapters-meal-stwpb</PackageProjectUrl>
 		<Description>A set of helpful adapters for mensa plans from STWPB.</Description>
@@ -22,8 +23,11 @@
 		<None Remove="Italbytz.Infrastructure.STWPB" />
 	</ItemGroup>
 	<ItemGroup>
-		<PackageReference Include="Italbytz.Ports.Common" Version="0.5.0" />
+		<PackageReference Include="Italbytz.Ports.Common" Version="0.5.1" />
 		<PackageReference Include="Italbytz.Ports.Meal" Version="0.5.0" />
-		<PackageReference Include="Italbytz.Infrastructure.STWPB" Version="0.1.1" />
+		<PackageReference Include="Italbytz.Infrastructure.STWPB" Version="9.0.0-rc.1" />
+	</ItemGroup>
+	<ItemGroup>
+		<None Include="introduction.md" Pack="true" PackagePath="\"/>
 	</ItemGroup>
 </Project>
