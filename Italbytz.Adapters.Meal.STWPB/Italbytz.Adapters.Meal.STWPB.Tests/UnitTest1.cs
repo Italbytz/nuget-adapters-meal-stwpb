@@ -1,4 +1,5 @@
-﻿using NUnit.Framework;
+﻿using System.Threading.Tasks;
+using NUnit.Framework;
 
 namespace Italbytz.Adapters.Meal.STWPB.Tests
 {
@@ -10,10 +11,12 @@ namespace Italbytz.Adapters.Meal.STWPB.Tests
         }
 
         [Test]
-        public void Test1()
+        public async Task TestRetrieveAll()
         {
-            
-            Assert.Pass();
+            var secret = "nunkesser-89knHj!85plK";
+            var repo = new MealRepository(secret, "de");
+            var meals = await repo.RetrieveAll();
+            Assert.IsTrue(meals.Count > 0);
         }
     }
 }
